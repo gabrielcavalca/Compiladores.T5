@@ -27,27 +27,14 @@ O comportamento do compilador é o seguinte:
 - **Python 3.x** (versão 3.6 ou superior)
 - **ANTLR4** (biblioteca Python antlr4-python3-runtime)
 - **Java** (para executar corretor automático)
-- **Git** (para clonar o repositório)
 - **GCC** (para compilar e executar o código gerado)
-
-### Instalação das Dependências:
-```bash
-# Instalar ANTLR4 para Python
-pip install antlr4-python3-runtime
-
-# Verificar instalações
-python3 --version
-java -version
-gcc --version
-```
 
 ## 📥 Como Baixar o Projeto
 
 ### Passo 1: Clonar o Repositório
 ```bash
 # Clonar o repositório do GitHub
-git clone [https://github.com/gabrielcavalca/Compiladores.T3.git
-](https://github.com/gabrielcavalca/Compiladores.T5.git)
+git clone https://github.com/gabrielcavalca/Compiladores.T5.git
 
 # Navegar para o diretório do projeto
 cd Compiladores.T5
@@ -69,13 +56,7 @@ ls -la
 
 **✅** Todos os arquivos Python já estão prontos no repositório.
 
-### Passo 1: Instalar Dependências
-```bash
-# Instalar ANTLR4 para Python (única dependência necessária)
-pip install antlr4-python3-runtime
-```
-
-### Passo 2: Testar Instalação
+### Passo 1: Testar Instalação
 ```bash
 # Verificar se o analisador executa corretamente
 python3 compilador.py
@@ -99,7 +80,7 @@ A saída será:
 
 - Mensagens de erro, se houver problemas léxicos/sintáticos/semânticos.
 
-### Passo 1: Teste de Funcionamento (Opcional)
+### Passo 2: Teste de Funcionamento (Opcional)
 ```bash
 # Exemplo de Execução Manual:
 # Exemplo: python3 compilador.py exemplos/teste1.la temp/saida.c
@@ -127,7 +108,7 @@ java -jar "compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.j
 
 ```
 Compiladores.T5/
-├── compilador.py    # Arquivo principal do analisador
+├── compilador.py    # Arquivo principal 
 ├── LAParser.py               # Parser gerado pelo ANTLR4
 ├── LALexer.py               # Lexer gerado pelo ANTLR4
 ├── LAListener.py            # Listener gerado pelo ANTLR4
